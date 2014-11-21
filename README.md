@@ -9,19 +9,32 @@ This relies on the PHPCodesniffer being installed
 
 ## General Installation
 
-1) First install PHPCodesniffer, check for it's existens via:
+First install PHPCodesniffer, check for it's existens via:
 
      phpcs --version
 
-If it's not installed, the easiest way to install is via PEAR. Instructions
-here: http://pear.php.net/package/PHP_CodeSniffer/download
 
-2) Checkout this project somewhere on your hardrive
+### PEAR
+
+If it's not installed, the easiest way to install PHP_CodeSniffer is to use the PEAR installer. [Instructions here](http://pear.php.net/package/PHP_CodeSniffer/download). Then checkout this project somewhere on your hardrive using;
 
     git clone git://github.com/stojg/silverstripe-codesniffer.git SilverStripe
-
+    
 **NOTE:** It is critical that the base directory for this standard is named
 "SilverStripe", otherwise the PHPCodesniffer autoloader will fail.
+
+### Composer
+
+If it's not installed, and you prefer using Composer you can easily install PHP_CodeSniffer system-wide with the following command:
+
+    composer global require "squizlabs/php_codesniffer=*"
+    
+Make sure you have ~/.composer/vendor/bin/ in your PATH.
+
+Clone this project as an available standard.
+
+	git clone git://github.com/stojg/silverstripe-codesniffer.git ~/.composer/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/SilverStripe
+
 
 ## Running the codesniffer
 
