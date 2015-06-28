@@ -130,7 +130,7 @@ class SilverStripe_Sniffs_WhiteSpace_DisallowSpaceIndentSniff implements PHP_Cod
             }
 
             // Is a space char in the indention?
-            $isSpace = preg_match('/[^\t]/', $indentionPart) ? true : false;
+            $isSpace = preg_match('/^[\t]/', $indentionPart) ? true : false;
             if ($isSpace === true) {
                 $error = 'Tabs must be used to indent lines; spaces are not allowed';
                 $phpcsFile->addError($error, ($stackPtr - 1), 'SpaceUsed');

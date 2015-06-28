@@ -3,7 +3,7 @@
 This is a proposed ruleset for SilverStripe projects.
 
 It tries to follow the official guidelines from
-http://doc.silverstripe.org/framework/en/trunk/misc/coding-conventions.
+http://docs.silverstripe.org/en/3.2/getting_started/coding_conventions/.
 
 This relies on the PHPCodesniffer being installed
 
